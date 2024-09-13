@@ -78,33 +78,34 @@ class ContactInfo extends ISuspensionBean {
   String toString() => json.encode(this);
 }
 
-class Languages extends GithubLanguage with ISuspensionBean {
-  String? tagIndex;
-  String? pinyin;
-  String? shortPinyin;
+// with ISuspensionBean
+// class Languages extends GithubLanguage with ISuspensionBean {
+//   String? tagIndex;
+//   String? pinyin;
+//   String? shortPinyin;
 
-  Languages.fromJson(Map<String, dynamic> json) : super.fromJson(json);
+//   Languages.fromJson(Map<String, dynamic> json) : super.fromJson(json);
 
-  @override
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> map = super.toJson();
-    void addIfNonNull(String fieldName, dynamic value) {
-      if (value != null) {
-        map[fieldName] = value;
-      }
-    }
+//   @override
+//   Map<String, dynamic> toJson() {
+//     final Map<String, dynamic> map = super.toJson();
+//     void addIfNonNull(String fieldName, dynamic value) {
+//       if (value != null) {
+//         map[fieldName] = value;
+//       }
+//     }
 
-//    addIfNonNull('tagIndex', tagIndex);
-    return map;
-  }
+// //    addIfNonNull('tagIndex', tagIndex);
+//     return map;
+//   }
 
-  @override
-  String getSuspensionTag() {
-    return tagIndex!;
-  }
+//   @override
+//   String getSuspensionTag() {
+//     return tagIndex!;
+//   }
 
-  @override
-  String toString() {
-    return json.encode(this);
-  }
-}
+//   @override
+//   String toString() {
+//     return json.encode(this);
+//   }
+// }

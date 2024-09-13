@@ -2,7 +2,7 @@ import 'package:azlistview_example/common/index.dart';
 import 'package:flutter/material.dart';
 
 class Utils {
-  static String getImgPath(String name, {String format: 'png'}) {
+  static String getImgPath(String name, {String format = 'png'}) {
     return 'assets/images/$name.$format';
   }
 
