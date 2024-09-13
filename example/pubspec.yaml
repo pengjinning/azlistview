@@ -41,7 +41,7 @@ dependencies:
   # url: git://github.com/Sky24n/github_language_colors.git
   github_language_colors:
     git:
-      url: git://github.com/Sky24n/github_language_colors.git
+      url: https://github.com/Sky24n/github_language_colors.git
 
 dev_dependencies:
   flutter_test:
